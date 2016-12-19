@@ -34,6 +34,13 @@ h2 {
   display: flex;
 }
 
+#main {
+  height: 500px;
+  width: auto;
+  margin: auto;
+  display: flex;
+}
+
 p {
   font-family: 'Gloria Hallelujah', cursive;
   font-weight: 400;
@@ -106,10 +113,11 @@ user-select: none;
   text-align: center;;
 }
 
-.faveImage {
-  height: 200px;
+#imageSelection .faveImage {
+  height: 250px;
   width: auto;
   padding: 5px;
+  border: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
   -moz-user-select: none;
@@ -117,8 +125,13 @@ user-select: none;
   user-select: none;
 }
 
-.faveImage:focus {
-  border: red 2px solid;
+.imgBtn {
+  padding: 0;
+}
+
+button {
+  border: none;
+  background-color: #ffffff;
 }
 
 #textBox {
@@ -136,6 +149,8 @@ user-select: none;
 }
 
 .showAnswer {
+  height: 100px;
+  width: auto;
   font-family: 'Gloria Hallelujah', cursive;
   font-weight: 400;
   font-size: 18px;

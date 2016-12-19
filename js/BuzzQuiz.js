@@ -1,5 +1,5 @@
 "useStrict";
-var selectedImage = 0;
+// var selectedImage = 0;
 
 function getCharScore() {
   var charScore = 0;
@@ -68,41 +68,42 @@ return avgHobbyScore;
 }
 
 function getImageScore() {
-  var getImage = document.getElementById("imageSelection");
-  getImage.addEventListener("click", selectImage);
-}
-// //   var imgScore = 0;
-    // if(imageSelect === "oscarTheGrouch") {
-    //   imageSelect = 1;
-// //     // else if(document.getElementById("bert")===true) {
-// //     //   imgScore = 2;
-// //     // }
-// //     // else if(document.getElementById("theCount")===true) {
-// //     //   imgScore = 3;
-// //     // }
-// //     // else if(document.getElementById("elmo")===true) {
-// //     //   imgScore = 4;
-// //     // }
-// //     // else if(document.getElementById("bigBird")===true) {
-// //     //   imgScore = 5;
-// //     // }
-// //     // else if(document.getElementById("cookieMonster")===true) {
-// //     //   imgScore = 6;
-// //     // }
-//   return getImage;
+  // var getImage = document.getElementById("imageSelection");
+  // getImage.addEventListener("click", selectImage);
+  var imgScore = 0;
+  var userImage = document.getElementsByClassName("faveImage");
 
+  for(var i = 0; i < userImage.length; i++) {
+          if(userImage[i].selected) {
+              var imgVal = userImage[i].value;
+              break;
+          }
+      }
+    if(imgVal === "oscarTheGrouch") {
+      imgScore = 1;
+    }
+    if(imgVal === "bert") {
+      imgScore = 2;
+    }
+    if(imgVal === "theCount") {
+      imgScore = 3;
+    }
+    if(imgVal === "elmo") {
+      imgScore = 4;
+    }
+    if(imgVal === "bigBird") {
+      imgScore = 5;
+    }
+    if(imgVal === "cookieMonster") {
+      imgScore = 6;
+    }
+  return imgScore;
+  }
 
-// var imgScore = 0;
-
-  // if(selectedImage === "oscarTheGrouch") {
-  //   imgScore = 1;
-  // }
-  // return imgScore;
-
-function selectImage(e) {
-  selectedImage = e.target.id;
-  console.log("this is e", e.target.id); 
-}
+// function selectImage(e) {
+//   selectedImage = e.target.id;
+//   console.log("this is e", e.target.id); 
+// }
 
 function getSeasonScore() {
   var userInput = document.getElementById("faveSeason").value;
@@ -188,6 +189,13 @@ function hide() {
     document.getElementById("btnFindOut").style.display = 'none';
     return;
   }
+
+  // function showAnswer() {
+  //   var 
+  //   var answer = document.createElement("div");
+  //   answer.classList.add("showAnswer");
+
+  // }
 
   // function show() {
   //   document.getElementById("btnFindOut").style.display = 'block';

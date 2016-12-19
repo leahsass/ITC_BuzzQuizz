@@ -17,8 +17,8 @@
 
 		<div id="intro-slide" class="questionContainer">
 			<h1>What Sesame Street Character Are You?</h1>
-			<img src="./images/sesamestreetcast.jpg" />
-			<h2>Let's Play!</h2>
+			<img id="main" src="./images/sesamestreetcast.jpg" />
+			<h1>Let's Play!</h1>
 			<!-- <p>Are you ready? Click "Let's Play" to begin!</p>
 			<button class="btn">Let's Play!</button> -->
 		</div>
@@ -30,16 +30,16 @@
 				<table>
 					<td>
 						<ul>
-							<li><label class"radiolabel"><input type="radio" class="char" name="selectChar" value="oscarTheGrouch" onclick="getCharScore()" />Grouchy, sometime pessimistic</label></li>
-							<li><label class"radiolabel"><input type="radio" class="char" name="selectChar" value="bert" onclick="getCharScore()" />OCD and a neat freak</label></li>
-							<li><label class"radiolabel"><input type="radio" class="char" name="selectChar" value="theCount" onclick="getCharScore()" />Analytical and detail-focused</label></li>
+							<li><label class"radiolabel"><input type="radio" class="char" name="selectChar" value="oscarTheGrouch"/>  Grouchy, sometime pessimistic</label></li>
+							<li><label class"radiolabel"><input type="radio" class="char" name="selectChar" value="bert"/>  OCD and a neat freak</label></li>
+							<li><label class"radiolabel"><input type="radio" class="char" name="selectChar" value="theCount"/>  Analytical and detail-focused</label></li>
 						</ul>
 					</td>
 					<td>
 						<ul>
-							<li><label class"radiolabel"><input type="radio" class="char" name="selectChar" value="elmo" onclick="getCharScore()" />Curious, an explorer</label></li>
-							<li><label class"radiolabel"><input type="radio" class="char" name="selectChar" value="bigBird" onclick="getCharScore()" />A genuine, kind soul</label></li>
-							<li><label class"radiolabel"><input type="radio" class="char" name="selectChar" value="cookieMonster" onclick="getCharScore()" />Goal-oriented, sometimes and over-achiever</label></li>
+							<li><label class"radiolabel"><input type="radio" class="char" name="selectChar" value="elmo"/>  Curious, an explorer</label></li>
+							<li><label class"radiolabel"><input type="radio" class="char" name="selectChar" value="bigBird"/>  A genuine, kind soul</label></li>
+							<li><label class"radiolabel"><input type="radio" class="char" name="selectChar" value="cookieMonster"/>  Goal-oriented, sometimes and over-achiever</label></li>
 						</ul>
 					</td>
 				</table>
@@ -55,16 +55,16 @@
 				<table>
 					<td>
 						<ul>
-							<li><label class="checkboxlabel"><input type="checkbox" class="faveHobby" name="faveHobby" value="cookieMonster" onclick="getHobbyScore()" />Eat cookies</label></li>
-							<li><label class="checkboxlabel"><input type="checkbox" class="faveHobby" name="faveHobby" value="oscarTheGrouch" onclick="getHobbyScore()" />Dumpster dive</label></li>
-							<li><label class="checkboxlabel"><input type="checkbox" class="faveHobby" name="faveHobby" value="bert" onclick="getHobbyScore()" />Read</label></li>
+							<li><label class="checkboxlabel"><input type="checkbox" class="faveHobby" name="faveHobby" value="cookieMonster"/>  Eat cookies</label></li>
+							<li><label class="checkboxlabel"><input type="checkbox" class="faveHobby" name="faveHobby" value="oscarTheGrouch"/>  Dumpster dive</label></li>
+							<li><label class="checkboxlabel"><input type="checkbox" class="faveHobby" name="faveHobby" value="bert"/>  Read</label></li>
 						</ul>
 					</td>
 					<td>
 						<ul>
-							<li><label class="checkboxlabel"><input type="checkbox" class="faveHobby" name="faveHobby" value="elmo" onclick="getHobbyScore()" />Frolick in a field of flowers</label></li>
-							<li><label class="checkboxlabel"><input type="checkbox" class="faveHobby" name="faveHobby" value="theCount" onclick="getHobbyScore()" />Count EVERYTHING</label></li>
-							<li><label class="checkboxlabel"><input type="checkbox" class="faveHobby" name="faveHobby" value="bigBird" onclick="getHobbyScore()" />Help others</label></li>
+							<li><label class="checkboxlabel"><input type="checkbox" class="faveHobby" name="faveHobby" value="elmo"/>  Frolick in a field of flowers</label></li>
+							<li><label class="checkboxlabel"><input type="checkbox" class="faveHobby" name="faveHobby" value="theCount"/>  Count EVERYTHING</label></li>
+							<li><label class="checkboxlabel"><input type="checkbox" class="faveHobby" name="faveHobby" value="bigBird"/>  Help others</label></li>
 						</ul>
 					</td>
 				</table>
@@ -75,12 +75,12 @@
 		<div class="questionContainer">
 			<h1>3. Pick your favorite image.</h1>
 			<div id="imageSelection">
-				<input type="image" src="./images/books.jpg" name="selectImage" class="faveImage" id="bert" onclick="getImageScore()">
-				<input type="image" src="./images/balloons.jpg" name="selectImage" class="faveImage" id="elmo" onclick="getImageScore()">
-				<input type="image" src="./images/cookie.jpg" name="selectImage" class="faveImage" id="cookieMonster" onclick="getImageScore()"><br/>
-				<input type="image" src="./images/numbers.jpg" name="selectImage" class="faveImage" id="theCount" onclick="getImageScore()">
-				<input type="image" src="./images/happy.jpg" name="selectImage" class="faveImage" id="bigBird" onclick="getImageScore()">
-				<input type="image" src="./images/garbage.jpg" name="selectImage" class="faveImage" id="oscarTheGrouch" onclick="getImageScore()"><br/>
+				<button class="imgBtn"><img src="./images/books.jpg" name="selectImage" class="faveImage" value="bert"></button> 
+				<button class="imgBtn"><img src="./images/balloons.jpg" name="selectImage" class="faveImage" value="elmo"></button>
+				<button class="imgBtn"><img src="./images/cookie.jpg" name="selectImage" class="faveImage" value="cookieMonster"></button><br/>
+				<button class="imgBtn"><img src="./images/numbers.jpg" name="selectImage" class="faveImage" value="theCount"></button>
+				<button class="imgBtn"><img src="./images/happy.jpg" name="selectImage" class="faveImage" value="bigBird"></button>
+				<button class="imgBtn"><img src="./images/garbage.jpg" name="selectImage" class="faveImage" value="oscarTheGrouch"></button><br/>
 			</div>
 			<!-- <button class="btn"><a class="btnNext"  href="#">Next</a></button> -->
 		</div>
@@ -102,7 +102,7 @@
 			<h1>5. What's Your Favorite Color?</h1>
 			<img src="./images/sscolors.jpg" />
 			<div id="colorSelection">
-				<select id="faveColor" name='faveColor' onchange="getColorScore()">
+				<select id="faveColor" name="faveColor">
 					<option value="None">Select color</option>
 					<option value="Red">Red</option>
 					<option value="Orange">Orange</option>
@@ -124,8 +124,8 @@
 		<div id="sumbitQuiz" class="questionContainer">
 			<h1>Click the button below to find out which Sesame Street character you are!</h1>
 			<div class="findOut">
-				<button class="btn" id="btnFindOut"><a class="btnShowResult"  href="#" onclick="hide()">Find Out!</a></button>
-				<div class="showAnswer" onclick="calculateAnswer()"></div>
+				<button class="btn" id="btnFindOut"><a class="btnShowResult" onclick="hide()">Find Out!</a></button>
+				<!--<div class="showAnswer" onclick="calculateAnswer()"></div>-->
 			</div>
 		</div>
 
