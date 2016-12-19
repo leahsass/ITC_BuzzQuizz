@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<title>What Sesame Street Character Are You?</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href="./css/BuzzQuiz.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+</head>
+<body>
+	<div class="main-quiz-container">
+
+		<div id="intro-slide" class="questionContainer">
+			<h1>What Sesame Street Character Are You?</h1>
+			<img src="./images/sesamestreetcast.jpg" />
+			<h2>Let's Play!</h2>
+			<!-- <p>Are you ready? Click "Let's Play" to begin!</p>
+			<button class="btn">Let's Play!</button> -->
+		</div>
+
+		<div class="questionContainer">
+			<h1>1. How do your friends describe you?</h1>
+			<img src="./images/ssfriends.jpg" />
+			<div id="radioSelection">
+				<table>
+					<td>
+						<ul>
+							<li><label class"radiolabel"><input type="radio" class="char" name="selectChar" value="oscarTheGrouch" onclick="getCharScore()" />Grouchy, sometime pessimistic</label></li>
+							<li><label class"radiolabel"><input type="radio" class="char" name="selectChar" value="bert" onclick="getCharScore()" />OCD and a neat freak</label></li>
+							<li><label class"radiolabel"><input type="radio" class="char" name="selectChar" value="theCount" onclick="getCharScore()" />Analytical and detail-focused</label></li>
+						</ul>
+					</td>
+					<td>
+						<ul>
+							<li><label class"radiolabel"><input type="radio" class="char" name="selectChar" value="elmo" onclick="getCharScore()" />Curious, an explorer</label></li>
+							<li><label class"radiolabel"><input type="radio" class="char" name="selectChar" value="bigBird" onclick="getCharScore()" />A genuine, kind soul</label></li>
+							<li><label class"radiolabel"><input type="radio" class="char" name="selectChar" value="cookieMonster" onclick="getCharScore()" />Goal-oriented, sometimes and over-achiever</label></li>
+						</ul>
+					</td>
+				</table>
+			</div>
+    	<!-- <button class="btn"><a class="btnNext"  href="#">Next</a></button> -->
+</div>
+		</div>
+
+		<div class="questionContainer">
+			<h1>2. What do you do for fun?</h1>
+			<img src="./images/ssread.jpg" />
+			<div id="checkboxSelection">
+				<table>
+					<td>
+						<ul>
+							<li><label class="checkboxlabel"><input type="checkbox" class="faveHobby" name="faveHobby" value="cookieMonster" onclick="getHobbyScore()" />Eat cookies</label></li>
+							<li><label class="checkboxlabel"><input type="checkbox" class="faveHobby" name="faveHobby" value="oscarTheGrouch" onclick="getHobbyScore()" />Dumpster dive</label></li>
+							<li><label class="checkboxlabel"><input type="checkbox" class="faveHobby" name="faveHobby" value="bert" onclick="getHobbyScore()" />Read</label></li>
+						</ul>
+					</td>
+					<td>
+						<ul>
+							<li><label class="checkboxlabel"><input type="checkbox" class="faveHobby" name="faveHobby" value="elmo" onclick="getHobbyScore()" />Frolick in a field of flowers</label></li>
+							<li><label class="checkboxlabel"><input type="checkbox" class="faveHobby" name="faveHobby" value="theCount" onclick="getHobbyScore()" />Count EVERYTHING</label></li>
+							<li><label class="checkboxlabel"><input type="checkbox" class="faveHobby" name="faveHobby" value="bigBird" onclick="getHobbyScore()" />Help others</label></li>
+						</ul>
+					</td>
+				</table>
+			</div>
+			<!-- <button class="btn"><a class="btnNext"  href="#">Next</a></button> -->
+		</div>
+
+		<div class="questionContainer">
+			<h1>3. Pick your favorite image.</h1>
+			<div id="imageSelection">
+				<input type="image" src="./images/books.jpg" name="selectImage" class="faveImage" id="bert" onclick="getImageScore()">
+				<input type="image" src="./images/balloons.jpg" name="selectImage" class="faveImage" id="elmo" onclick="getImageScore()">
+				<input type="image" src="./images/cookie.jpg" name="selectImage" class="faveImage" id="cookieMonster" onclick="getImageScore()"><br/>
+				<input type="image" src="./images/numbers.jpg" name="selectImage" class="faveImage" id="theCount" onclick="getImageScore()">
+				<input type="image" src="./images/happy.jpg" name="selectImage" class="faveImage" id="bigBird" onclick="getImageScore()">
+				<input type="image" src="./images/garbage.jpg" name="selectImage" class="faveImage" id="oscarTheGrouch" onclick="getImageScore()"><br/>
+			</div>
+			<!-- <button class="btn"><a class="btnNext"  href="#">Next</a></button> -->
+		</div>
+
+		<div class="questionContainer">
+			<h1>4. What is your favorite season?</h1>
+			<img src="./images/ssseason.jpg" />
+			<div id="textBox">
+				<input type="textarea" id="faveSeason" name="faveSeason" placeholder="Type Here"  />
+			</div>
+			<!-- <button class="btn"><a class="btnNext"  href="#">Next</a></button> -->
+			<!-- winter - oscar, bert
+			spring - elmo, count
+			fall - bb
+			summer - cookie -->
+		</div>
+
+		<div class="questionContainer">
+			<h1>5. What's Your Favorite Color?</h1>
+			<img src="./images/sscolors.jpg" />
+			<div id="colorSelection">
+				<select id="faveColor" name='faveColor' onchange="getColorScore()">
+					<option value="None">Select color</option>
+					<option value="Red">Red</option>
+					<option value="Orange">Orange</option>
+					<option value="Yellow">Yellow</option>
+					<option value="Green">Green</option>
+					<option value="Blue">Blue</option>
+					<option value="Purple">Purple</option>
+				</select>
+			</div>
+			<!-- <button class="btn"><a class="btnNext"  href="#">Next</a></button> -->
+			<!-- Red = Elmo
+			Orange = Bert
+			Yellow = Big Bird
+			Green = Oscar
+			Purple = Count
+			Blue = Cookie -->
+		</div>
+
+		<div id="sumbitQuiz" class="questionContainer">
+			<h1>Click the button below to find out which Sesame Street character you are!</h1>
+			<div class="findOut">
+				<button class="btn" id="btnFindOut"><a class="btnShowResult"  href="#" onclick="hide()">Find Out!</a></button>
+				<div class="showAnswer" onclick="calculateAnswer()"></div>
+			</div>
+		</div>
+
+	</div>
+
+<script src="./js/BuzzQuiz.js" type="text/javascript"></script>
+</body>
+</html>

@@ -1,0 +1,146 @@
+/*body {
+  background: url(../images/Street.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}*/
+
+.questionContainer {
+  margin: auto;
+  padding: 30px;
+}
+
+h1 {
+  font-family: 'Gloria Hallelujah', cursive;
+  font-weight: 400;
+  font-size: 30px;
+  text-align: center;
+  padding: 22px;
+  margin: 0;
+}
+
+h2 {
+  font-family: 'Gloria Hallelujah', cursive;
+  font-weight: 400;
+  font-size: 22px;
+  text-align: center;
+}
+
+.questionContainer img {
+  height: 400px;
+  width: auto;
+  margin: auto;
+  display: flex;
+}
+
+p {
+  font-family: 'Gloria Hallelujah', cursive;
+  font-weight: 400;
+  font-size: 22px;
+  padding: 20px;
+  text-align: center;
+}
+
+.btn {
+  display: flex;
+  margin: auto;
+  font-family: 'Gloria Hallelujah', cursive;
+  font-weight: 400;
+  font-size: 22px;
+  padding: 10px 20px;
+  background-color: #fffb3a;
+}
+
+.btnShowResult {
+  color: #000000;
+  text-decoration: none;
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #000000;
+}
+
+/*.char {
+  font-family: 'Gloria Hallelujah', cursive;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: left;
+  margin: auto;
+}*/
+
+label {
+  font-family: 'Gloria Hallelujah', cursive;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+table {
+  margin: auto;
+}
+
+li {
+  list-style: none;
+  padding: 20px;
+}
+
+.faveHobby {
+  padding-left: 5px;
+}
+
+/*img {
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-o-user-select: none;
+user-select: none;
+}*/
+
+#imageSelection {
+  text-align: center;;
+}
+
+.faveImage {
+  height: 200px;
+  width: auto;
+  padding: 5px;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+.faveImage:focus {
+  border: red 2px solid;
+}
+
+#textBox {
+  text-align: center;
+  padding: 20px;
+}
+
+#faveSeason {
+  text-align: center;
+}
+
+#colorSelection {
+  text-align: center;
+  padding: 20px;
+}
+
+.showAnswer {
+  font-family: 'Gloria Hallelujah', cursive;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+#btnFindOut {
+  background-color: none;
+}
